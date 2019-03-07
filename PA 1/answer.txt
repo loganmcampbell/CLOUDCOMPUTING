@@ -1,0 +1,22 @@
+#1. 
+	WordCount.java has a few methods in the program.
+	------------------------------------------------
+	TokenizerMapper Method
+	Map Method
+	IntSumReducer Method
+	Reduce Method
+	Main Method
+	------------------------------------------------
+After messing with and understanding that WordCount.java generates a configuration setting, a job, file inputs/generates outputs. It is easier to see how each method before the 3 objects/tasks that are created are used within the program. The biggest mistake I was making was just generating a counter in the Main Program section which in fact does nothing but initialize the objects, values, and the map. Thus, after discovering this scheme, the best solution to finding the number of calls map method has made was to make a counter where it was being used each time TokenizerMapper Method was used. 
+
+#2.
+	WordCount.java Methods and Static Instances
+	-------------------------------------------
+	Using a global variable is what someone would do in a different language.
+	In this case, java uses methods, classes, and different types of variables.
+	Therefore, the best way to generate a variable or method that is globally used is:
+	By initializing a public variable/method and then generating a static variable that
+	can be changed due to either calling the method (incrementing) or by actually
+	incrementing the variable itself.	
+
+By creating an instance static variable to act like a global variable or by setting up a public method that calls an incrementor are ways to calculate the x amount of times map was called within the TokenizerMapper.
