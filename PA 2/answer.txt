@@ -1,0 +1,29 @@
+Counting Bigrams
+===========================================================
+===========================================================
+
+To begin with a bigram is a pair of consecutive units.
+Taking each two adjacent words and generating a bigram out of them.
+
+For an example. "I LOVE TO PROGRAM".
+comes out to be : "I" "LOVE" "TO" "PROGRAM" as tokens
+and these tokens can be obtained by grabbing a pair and then swapping out the right most token
+THERFORE THIS HAPPENS TO GENERATE : 
+
+"I LOVE"============= "LOVE TO"============== "TO PROGRAM"
+
+So in order to do this, what I thought was to think  of it as a temporary variable that swaps.
+I generated a dynamic data structure to reduce memory allocation and to increase efficiency.
+Generally speaking making sure the line of (value//object) has more than one token.
+If so we can temporary put the begining token in a list with the next as a bigram.
+While if there is still another token we can swap out the oldest token with the newest one,
+Thus creating the new bigram. Doing this until you reach the end of the sentence/object/line.
+
+
+In order to see how many map tasks have been launched I decided to leave it where it was.
+Since in fact it would only happen when you generated the bigrams our given map.
+That is counting the map tasks after a line has been completely bigrammed.
+
+After realizing that the statement/solution was wrong. I figured to that if you wanted to obtain how many maps were going to be put into the map phase you would need to know how many maps there are in general. The answer is three but I obtained 8 when i created a variable to obtain each generation of a map before it was reduced. I didn't write it to a file but it outputs if you run the program. It doesn't use the built in counters.
+
+
