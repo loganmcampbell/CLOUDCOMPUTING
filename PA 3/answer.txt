@@ -1,0 +1,14 @@
+Main Objective for Programming Assignment
+===========================================
+REVERSE ORDERING!!
+------------------
+
+At first I tried to go over the code and every single bit of code to understand more of what each method and class have to do with each other. I decided to comment on everything to start off the assignment.
+
+Generating the Text class was pretty difficult.
+Following the exact code of the WordPair was very misleading.
+Got tons of errors and head to look through a bunch of these errors.
+I decided to see where the sorting would happen at which is before the reducer stage in the code. We override it (the map <key,values>) to compare to do our own sorting. I learned this from reading the book and several online tutorials on how MapReduce works. Everything was vague in terms of generating a text pair. What really helped me was the books Guide on dealing with secondary sorting. It showed how the compare would use a byte structure and then a comparing of Text writables. Knowing this you can assume that output is the default which is alphabetical order. Read on several lexicographical ordering is that when you negative an ordering sequence you get the reverse and that is what I did to reverse the ordering.
+
+Side. Using the text and generating two objects two use the compare method was very confusing to myself. I got really confused when I had to use the instances of the private vars we made and then use them with our original vars in the method. To me it was really messy and I didn't know how to decide on anything. Which lead to even more errors
+
